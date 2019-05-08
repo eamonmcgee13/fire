@@ -12,6 +12,26 @@
 <style>
     
     
+        a:link {
+  color: black; 
+  background-color: transparent; 
+  text-decoration: none;
+}    
+            a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
     div {
   width: 100px;
   height: 100px;
@@ -65,7 +85,7 @@ div:hover {
 div {
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: orangered;
   position: relative;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-name: example;
@@ -98,12 +118,7 @@ div {
         z-index: -1;
     }
     
-    #video video {
-        position: absolute;
-        bottom: 50px;
-        left: 500px;
-        z-index: -1;
-    }
+    
      #fire img {
         position: absolute;
         bottom: -800px;
@@ -126,7 +141,12 @@ div {
         z-index: -1;
     }
     
-    
+    #video video {
+        position: absolute;
+        bottom: 450px;
+        left: 1000px;
+        z-index: -1;
+    }
     
     #burning img {
         position: absolute;
@@ -136,7 +156,12 @@ div {
     }
     
     
-    
+     #crackle audio {
+        position: absolute;
+        bottom: -100px;
+        left: 1500px;
+        z-index: -1;
+    }
     
     
     </style>
@@ -168,7 +193,7 @@ div {
 
 </div>
     
-            <h1 id=".poem"><a href="https://www.asirt.org/safe-travel/road-safety-facts/"target="_blank">INTO FIRE</a></h1>
+            <h1 id=".poem"><a href="https://www.youtube.com/watch?v=jTj1TtXHKG0"target="_blank">INTO FIRE</a></h1>
 
         
 <p class="poem">
@@ -215,12 +240,19 @@ div {
     
     
     </body>
-   <div id="video"> <video width="400" height="250" controls autoplay>
+   <div id="video"> <video width="1200" height="700" controls autoplay>
     
   <source src="video.mp4" type="video/mp4">
 
   
 </video></div>
+    
+    <div id="crackle">
+<audio controls autoplay loop>
+  <source src="crackle.mp3" type="audio/mpeg">
+    </audio></div>
+
+    
     <div id="dad">
     <img src="dad.jpg"></div>
 
@@ -245,7 +277,6 @@ div {
 
 <div class="rectangle"></div>
     <div class="rectangle2"></div>
-
 
 
 
